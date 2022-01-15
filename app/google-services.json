@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "852657337952",
+    "project_id": "indian-defense-lovers",
+    "storage_bucket": "indian-defense-lovers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852657337952:android:671c68e84ffdef5a7a7505",
+        "android_client_info": {
+          "package_name": "com.example.indiandefenselovers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852657337952-p7f3akqn3dm2m59kip6ctfko0jj9gruv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBNd24hiNzC4ufLhJq45r7AvL5q9y-y1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852657337952-p7f3akqn3dm2m59kip6ctfko0jj9gruv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

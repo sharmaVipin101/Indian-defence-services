@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/donate"
+        android:name="com.example.indiandefenselovers.view.homeScreens.Donate"
+        android:label="fragment_donate"
+        tools:layout="@layout/fragment_donate" />
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.indiandefenselovers.view.homeScreens.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_previousPapers"
+            app:destination="@id/previousPapers"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/mentors"
+        android:name="com.example.indiandefenselovers.view.homeScreens.Mentors"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_mentors" />
+
+    <fragment
+        android:id="@+id/previousPapers"
+        android:name="com.example.indiandefenselovers.view.PreviousPapers"
+        android:label="fragment_previous_papers"
+        tools:layout="@layout/fragment_previous_papers">
+        <argument
+            android:name="Clickable"
+            app:argType="com.example.indiandefenselovers.repository.model.Clickable" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paperCds"
+        android:name="com.example.indiandefenselovers.view.PdfViewer"
+        android:label="paperCds" >
+    </fragment>
+
+</navigation>
